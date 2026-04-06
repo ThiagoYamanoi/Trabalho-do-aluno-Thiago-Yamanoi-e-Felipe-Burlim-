@@ -13,7 +13,6 @@ const CampoTexto = (props) => {
         type="text" 
         value={props.valor}
         onChange={aoDigitar}
-        required
       />
     </div>
   );
