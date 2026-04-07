@@ -8,7 +8,7 @@ const CardProduto = ({ produto }) => {
     Dell: "https://quenotebookcomprar.com.br/wp-content/uploads/2021/01/logo_Dell.png",
     Positivo: "https://cdn.bandnewsfmcuritiba.com/band/wp-content/uploads/2019/05/positivo-2.jpg",
     Asus: "https://t2.tudocdn.net/293446?w=824&h=494",
-    XingLing: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDOrEM7dm1NguESPYCWTSW1EdrxwXqBlKiRA&s"
+    XingLing: ""
   };
 
   return (
