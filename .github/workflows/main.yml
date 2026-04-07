@@ -1,0 +1,30 @@
+name: Build e Deploy React
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: baixar codigo
+        uses: actions/checkout@v3
+
+      - name: instalar node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: instalar dependencias
+        run: npm install
+
+      - name: gerar build
+        run: npm run build
+
+      - name: publicar no github pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
